@@ -15,4 +15,4 @@ eureka:
 server:
   port: 8067
 env: 
-  dev1
+  dev2
