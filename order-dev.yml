@@ -16,6 +16,6 @@ server:
   port: 8067
 env: 
   dev3
-girl：
+girl:
   age: 22
   name: lili
