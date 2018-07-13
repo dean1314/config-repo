@@ -1,0 +1,17 @@
+zuul:
+  # 全部服务忽略敏感头（全部服务可以传递cookie)
+  ignored-headers: 
+  routes:
+    aaa:
+      path: /myproduct/**
+      serviceId: product
+      sensitiveHeaders:
+
+# 简洁写法
+# product: /myproduct/**
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 10000
+# 忽略掉接口，禁止访问
+  ignored-patterns:
+#    - /**/product/list
